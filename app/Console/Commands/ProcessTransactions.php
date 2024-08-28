@@ -31,6 +31,19 @@ class ProcessTransactions extends Command
      */
     public function handle()
     {
+        $i = 0;
+        while ($i < 20) {
+            $i++;
+
+            switch ($i) {
+                case 0:
+            }
+        }
+
+
+
+
+
         $filePath = $this->argument('file');
         try {
             $data = $this->commissionCalculatorService->handle($filePath);
